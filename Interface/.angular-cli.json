@@ -34,6 +34,8 @@
       "config": "./protractor.conf.js"
     }
   },
+  "e2e:ci": "npm run ng e2e -- --serve=true --config protractor.phantomjs.conf.js --webdriver-update=false",
+  "pree2e:ci": "npm run webdriver-manager update -- --gecko=false --chrome=false",
   "lint": [
     {
       "project": "src/tsconfig.app.json",
