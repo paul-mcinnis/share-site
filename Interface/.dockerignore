@@ -1,0 +1,7 @@
+# exclude - filepath
+dist
+node_modules
+
+# exclude - filename
+.dockerignore
+*.dockerfile
