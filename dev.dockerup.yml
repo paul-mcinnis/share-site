@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+
+  interface-web:
+    build:
+      context: Interface
+      dockerfile: dev.dockerfile
+    image: sharesite-interface-web:0.1.0
+    ports:
+      - "8080:4200"
+    deploy:
+      replicas: 1
+    networks:
+      - sharenet
+
+networks:
+  sharenet:
